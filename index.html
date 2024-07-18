@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bayon&family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="nobar">PS Calculator</p>
+      <label for="principle_amount">បញ្ចូលប្រាក់ខ្ចី​​ ($)​</label>
+      <span class="span"></span>
+      <input id="laon_Amount" type="number" min="0" />
+
+      <label for="Interest">កាប្រាក់​(%)</label>
+      <span class="span"></span>
+      <input id="pay_rate" type="number" min="0" max="100" />
+
+      <label for="Tenure">រយះពេល (ខែ)</label>
+      <span class="span"></span>
+      <input id="Payment_in_Years" type="number" min="0" max="12" />
+      <div class="box">
+        <button onclick="Calculated();">គណនា</button>
+        <button onclick="reset();">លុបចេញ</button>
+      </div>
+      <p id="result"></p>
+      <p id="paypermonth"></p>
+      <p id="fullpayrate"></p>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>
